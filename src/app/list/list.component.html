@@ -1,0 +1,7 @@
+<div id="filter">
+  <button class="button" (click)="filter()">Filter</button>
+</div>
+<div *ngFor="let user of users">
+  <app-card [firstName]="user.firstName" [lastName]="user.lastName" [age]="user.age">
+  </app-card>
+</div>
